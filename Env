@@ -1,0 +1,26 @@
+# ── LLM Configuration (model-agnostic) ────────────────────────────────────────
+# Change these to switch between any OpenAI-compatible LLM provider
+
+# TCS GenAI / DeepSeek-R1 (default)
+LLM_BASE_URL=https://genailab.tcs.in
+LLM_MODEL=azure_ai/genailab-maas-DeepSeek-R1
+LLM_API_KEY=your_tcs_api_key_here
+LLM_VERIFY_SSL=false
+
+# ── OR — OpenAI GPT-4o ────────────────────────────────────────────────────────
+# LLM_BASE_URL=https://api.openai.com/v1
+# LLM_MODEL=gpt-4o
+# LLM_API_KEY=sk-...
+# LLM_VERIFY_SSL=true
+
+# ── OR — Local Ollama LLM ────────────────────────────────────────────────────
+# LLM_BASE_URL=http://localhost:11434/v1
+# LLM_MODEL=llama3
+# LLM_API_KEY=ollama
+# LLM_VERIFY_SSL=true
+
+# ── Embedding model (Ollama, local) ──────────────────────────────────────────
+OLLAMA_BASE_URL=http://localhost:11434
+
+# ── ChromaDB persistence directory ──────────────────────────────────────────
+CHROMA_PERSIST_DIR=./chroma_kb
